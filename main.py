@@ -28,7 +28,7 @@ for message in st.session_state.messages:
 
 @st.cache_resource
 def get_vectorstore():
-    pdf_name = "../nodejs.pdf"
+    pdf_name = "nodejs.pdf"
 
     # Load PDF
     loader = PyPDFLoader(pdf_name)
