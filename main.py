@@ -16,7 +16,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 
 load_dotenv()
-st.title("RAG CHATBOT")
+st.title(" NODE RAG CHATBOT")
 
 # Initialize session state
 if 'messages' not in st.session_state:
