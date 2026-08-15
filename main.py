@@ -92,7 +92,7 @@ if prompt:
     # Groq LLM
     # -----------------------------------
 
-    model = "openai/gpt-oss-120b"
+    model = "llama-3.1-8b-instant"
 
     groq_chat = ChatGroq(
         groq_api_key=os.environ.get("GROQ_API_KEY"),
@@ -136,7 +136,7 @@ Question:
 
             # Create retriever
             retriever = vectorstore.as_retriever(
-                search_kwargs={"k": 3}
+                search_kwargs={"k": 6}
             )
 
 
