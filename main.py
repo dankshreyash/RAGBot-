@@ -92,7 +92,7 @@ if prompt:
     # Groq LLM
     # -----------------------------------
 
-    model = "llama-3.1-8b-instant"
+    model = "openai/gpt-oss-20b"
 
     groq_chat = ChatGroq(
         groq_api_key=os.environ.get("GROQ_API_KEY"),
